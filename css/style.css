@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  transition: all 0.3s;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a {
+  font-family: var(--ff-Gilroy-Bold);
+  color: var(--text-grey-color);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1 {
+  font-family: Gilroy-Bold;
+  font-size: 47px;
+  line-height: 59px;
+}
+
+@font-face {
+  font-family: "Gilroy-Reg";
+  font-weight: normal;
+  src: url("/fonts/Gilroy-Regular.ttf") format("ttf");
+  src: url("/fonts/Gilroy-Regular.eot") format("eot");
+  src: url("/fonts/Gilroy-Regular.woff") format("woff");
+  src: url("/fonts/Gilroy-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  src: url("/fonts/Gilroy-Medium.ttf") format("ttf");
+  src: url("/fonts/Gilroy-Medium.eot") format("eot");
+  src: url("/fonts/Gilroy-Medium.woff") format("woff");
+  src: url("/fonts/Gilroy-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-weight: bold;
+  src: url("/fonts/Gilroy-Bold.ttf") format("ttf");
+  src: url("/fonts/Gilroy-Bold.eot") format("eot");
+  src: url("/fonts/Gilroy-Bold.woff") format("woff");
+  src: url("/fonts/Gilroy-Bold.woff2") format("woff2");
+}
+
+body {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f6f6f6;
+  --text-black-color: #070707;
+  --text-grey-color: #828282;
+  --base-line-height: 22px;
+  --ff-Gilroy-Reg: "Gilroy-Reg";
+  --ff-Gilroy-Medium: "Gilroy-Medium";
+  --ff-Gilroy-Bold: "Gilroy-Bold";
+  color: var(--text-black-color);
+  background: var(--main-bg-color);
+  font-size: 18px;
+}
+
+h2 {
+  font-family: var(--ff-Gilroy-Bold);
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+p {
+  font-family: var(--ff-Gilroy-Medium);
+}
+
+a:hover {
+  color: var(--text-black-color);
+  transition: 0.3s;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 0 1 auto;
+  line-height: var(--base-line-height);
+  font-family: var(--ff-Gilroy-Bold);
+  margin-bottom: 40px;
+}
+
+nav {
+  border-bottom: 1px solid var(--text-grey-color);
+}
+
+.link-active {
+  color: var(--text-black-color);
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  flex: 0 1 auto;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  gap: 15px;
+}
+.intro {
+  margin-bottom: 105px;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.intro__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.intro__profession {
+  max-width: 155px;
+  line-height: var(--base-line-height);
+}
+
+.intro__change-language {
+  transform: rotate(-90deg) translateY(25px);
+  line-height: 19px;
+}
+
+.intro__bg img {
+  width: 100%;
+  height: auto;
+}
+
+.about-me {
+  background: var(--secondary-bg-color);
+}
+
+.about-me__wrapper {
+  padding: 120px 0 107px;
+}
+
+.about-me__title {
+  margin-bottom: 18px;
+}
+
+.about-me__description {
+  max-width: 485px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  text-align: center;
+  line-height: 21px;
+}
