@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  transition: all 0.3s;
+  transition: all 0s;
 }
 *,
 *:before,
@@ -135,15 +135,20 @@ p {
   font-family: var(--ff-Gilroy-Medium);
 }
 
+a {
+  transition: 0.3s;
+}
+
 a:hover {
   color: var(--text-black-color);
-  transition: 0.3s;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
 }
+
+/* Header */
 
 .header {
   flex: 0 1 auto;
@@ -180,6 +185,10 @@ nav {
   padding: 32px 0;
   gap: 15px;
 }
+
+/* Main */
+/* Section Intro */
+
 .intro {
   margin-bottom: 105px;
 }
@@ -203,6 +212,7 @@ nav {
 }
 
 .intro__change-language {
+  /* Можно еще реализовать через writing-mode: vertical-lr; */
   transform: rotate(-90deg) translateY(25px);
   line-height: 19px;
 }
@@ -211,6 +221,8 @@ nav {
   width: 100%;
   height: auto;
 }
+
+/* Section About Me */
 
 .about-me {
   background: var(--secondary-bg-color);
@@ -232,4 +244,62 @@ nav {
   row-gap: 40px;
   text-align: center;
   line-height: 21px;
+}
+
+/* Section Skills */
+
+.skills {
+  font-family: var(--ff-Gilroy-Medium);
+  padding: 90px 0 110px;
+}
+
+.skills__title {
+  margin-bottom: 70px;
+}
+
+.skills__description {
+  text-align: center;
+  height: auto;
+  margin-bottom: 82px;
+}
+
+.programs-row {
+  display: flex;
+  column-gap: 90px;
+  justify-content: space-between;
+}
+
+.programs-column {
+  flex: 0 1 25%;
+}
+
+.card {
+  padding: 0 5px;
+}
+
+.card__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__column > img {
+  margin-bottom: 24px;
+}
+
+.card__text {
+  font-family: var(--ff-Gilroy-Bold);
+  color: var(--text-grey-color);
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.card__text--m-bot {
+  margin-bottom: 57px;
+}
+.card__rating {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
