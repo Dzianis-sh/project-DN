@@ -396,6 +396,8 @@ nav {
   margin-bottom: 57px;
 }
 .card__rating {
+  width: 100%;
+  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   column-gap: 9px;
