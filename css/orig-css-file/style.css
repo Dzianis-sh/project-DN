@@ -2,9 +2,8 @@
   padding: 0;
   margin: 0;
   border: 0;
-  transition: all 0s;
+  transition: all 0.3s;
 }
-
 *,
 *:before,
 *:after {
@@ -81,6 +80,12 @@ img {
   vertical-align: top;
 }
 
+h1 {
+  font-family: Gilroy-Bold;
+  font-size: 47px;
+  line-height: 59px;
+}
+
 @font-face {
   font-family: "Gilroy-Reg";
   font-weight: normal;
@@ -89,6 +94,7 @@ img {
   src: url("../fonts/Gilroy-Regular.woff") format("woff");
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Gilroy-Medium";
   font-weight: 500;
@@ -97,6 +103,7 @@ img {
   src: url("../fonts/Gilroy-Medium.woff") format("woff");
   src: url("../fonts/Gilroy-Medium.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Gilroy-Bold";
   font-weight: bold;
@@ -104,11 +111,6 @@ img {
   src: url("../fonts/Gilroy-Bold.eot") format("eot");
   src: url("../fonts/Gilroy-Bold.woff") format("woff");
   src: url("../fonts/Gilroy-Bold.woff2") format("woff2");
-}
-h1 {
-  font-family: var(--ff-Gilroy-Bold);
-  font-size: 47px;
-  line-height: 59px;
 }
 
 body {
@@ -181,11 +183,13 @@ nav {
 }
 
 /* Main */
+
 .main {
   flex: 1 1 auto;
 }
 
 /* intro */
+
 .intro {
   margin-bottom: 105px;
 }
@@ -231,6 +235,7 @@ nav {
 }
 
 /* mobile menu */
+
 .mobile-menu {
   padding: 66px 0 58px;
   position: fixed;
@@ -309,6 +314,7 @@ nav {
 }
 
 /* end mobile menu */
+
 /* about me */
 .about-me {
   background: var(--secondary-bg-color);
@@ -333,6 +339,7 @@ nav {
 }
 
 /* skills */
+
 .skills {
   font-family: var(--ff-Gilroy-Medium);
   padding: 90px 0 110px;
@@ -385,11 +392,9 @@ nav {
   text-align: center;
   margin-bottom: 40px;
 }
-
 .card__text--m-bot {
   margin-bottom: 57px;
 }
-
 .card__rating {
   width: 100%;
   width: -moz-fit-content;
@@ -400,10 +405,11 @@ nav {
 }
 
 .card__rating img {
-  aspect-ratio: 22/20;
+  aspect-ratio: 22 / 20;
 }
 
 /* portfolio */
+
 .portfolio {
   background: var(--secondary-bg-color);
   padding: 112px 0 96px;
@@ -431,7 +437,6 @@ nav {
   font-size: 18px;
   line-height: var(--base-line-height);
 }
-
 .portfolio__link:hover {
   text-decoration: underline;
 }
@@ -461,6 +466,7 @@ nav {
 }
 
 /* contacts */
+
 .contacts {
   padding: 114px 0 0;
 }
@@ -512,7 +518,7 @@ nav {
 }
 
 .contacts__socials > a > img {
-  aspect-ratio: 41/41;
+  aspect-ratio: 41 / 41;
 }
 
 .contacts__socials a:hover {
@@ -535,17 +541,18 @@ nav {
   font-size: 14px;
   text-align: center;
 }
-
 .footer__like a {
   font-size: 14px;
   font-family: var(--ff-Gilroy-Medium);
 }
 
 /* Responsive */
+
 @media (max-width: 950px) {
   .intro {
     margin-bottom: 80px;
   }
+
   .programs-row {
     flex-wrap: wrap;
     justify-content: center;
@@ -566,31 +573,39 @@ nav {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .intro-main-wrapper {
     row-gap: 36px;
     padding-top: 65px;
   }
+
   .intro-wrapper-description {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 25px;
   }
+
   .intro__change-language {
     display: none;
   }
+
   .burger-menu {
     display: block;
     line-height: 59px;
   }
+
   .burger-menu__btn rect {
     transition: 0.4s;
   }
+
   .burger-menu__btn:hover rect {
     fill: var(--text-grey-color);
   }
+
   .about-me__wrapper {
     padding: 80px 0 75px;
   }
+
   .about-me__title {
     margin-bottom: 30px;
   }
@@ -606,48 +621,61 @@ nav {
   .portfolio {
     padding: 80px 0;
   }
+
   .portfolio__title {
     margin-bottom: 47px;
   }
+
   .portfolio-row {
     row-gap: 30px;
   }
+
   .portfolio-body {
     row-gap: 78px;
   }
+
   .contacts {
     padding: 82px 0 0;
   }
+
   .contacts__title {
     margin-bottom: 27px;
   }
+
   .contacts__text {
     margin-bottom: 40px;
   }
+
   .contacts__btn {
     margin-bottom: 48px;
     width: 100%;
   }
+
   .contacts__btn:hover {
     transform: none;
   }
+
   .footer {
     padding: 50px 0 90px;
   }
 }
+
 @media (max-width: 400px) {
   .portfolio__link {
     font-size: 16px;
   }
+
   .mobile-menu {
     padding: 40px 0 30px;
     column-gap: 10px;
     width: 320px;
   }
+
   .mobile-menu__nav li {
     font-size: 28px;
     line-height: 36px;
   }
+
   .mobile-menu__change-language {
     font-size: 28px;
   }
@@ -658,5 +686,3 @@ nav {
     margin-bottom: 55px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
